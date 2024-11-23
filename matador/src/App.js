@@ -1,15 +1,17 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Homepage from './Homepage';
+import Chatpage from './Chatpage';  
 
-import Homepage from "./Homepage";
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Homepage />
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/chat-page" element={<Chatpage />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

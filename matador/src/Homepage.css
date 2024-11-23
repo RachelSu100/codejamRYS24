@@ -1,3 +1,40 @@
+.main-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.tagline-text {
+    font-size: 10vh;
+    font-family: 'MyCustomFont', sans-serif;
+    color: white;
+    margin-bottom: 2rem;
+}
+
 .get-started-button {
     background-color: transparent;
     border-color: white;
@@ -7,9 +44,10 @@
     font-size: 5vh;
     border-width: 5px;
     box-shadow: none;
+    cursor: pointer;
 }
 
-.tagline-text {
-    font-size: 10vh;
-    font-family: 'MyCustomFont', sans-serif;
+.get-started-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
 }
