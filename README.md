@@ -6,5 +6,3 @@ yegor
 sahar
 
 matador AI challenge
-
-fdfgsdfgsdfgdf
