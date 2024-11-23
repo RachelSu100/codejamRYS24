@@ -1,5 +1,6 @@
 # codejamRYS24
 allo
+bye
 
 rachel
 yegor
