@@ -4,7 +4,10 @@
     background-color:black;
     align-items: center;
     text-align: center;
-    padding: 10vh;
+}
+
+.navbar-chatpage{
+    padding: 1vh;
 }
 
 .start-convo-text {

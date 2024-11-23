@@ -4,28 +4,29 @@
     left: 0;
     width: 100%;
     z-index: 10;
-    margin: 20px;
+    display: flex;
+    height: 60px;
 }
 
 .navbar-links {
-    list-style-type: none;
-    display: flex; 
+    display: flex;
     margin: 0;
     padding: 0;
+    gap: 40px; 
+    justify-content: center;
+    align-items: center; 
 }
 
-.navbar-links li {
-    margin-right: 20px;
-}
-
-.navbar-link {
+.navbar-button {
+    background: none;
+    border: none;
     color: white;
-    text-decoration: none;
     font-size: 22px;
-    transition: color 0.3s;
+    cursor: pointer;
     font-family: 'MyCustomFont', sans-serif;
+    transition: color 0.3s;
 }
 
-.navbar-link:hover {
+.navbar-button:hover {
     color: lightgray;
 }

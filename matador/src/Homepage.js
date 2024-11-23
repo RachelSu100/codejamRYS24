@@ -21,9 +21,7 @@ const Homepage = () => {
             </div>
 
             <div className='container'>
-                <div>
-                    <Navigation/>
-                </div>
+                <Navigation/>
                 <div className='text-container'>
                 <p className="tagline-text">Find your dream car.</p>
                 <button 
