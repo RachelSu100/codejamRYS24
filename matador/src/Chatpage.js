@@ -1,9 +1,10 @@
 import React from 'react';
+import './Chatpage.css'
 
 const Chatpage = () => {
     return (
-        <div>
-            <h1>Welcome to the New Page!</h1>
+        <div className='background-chatpage'>
+            <p className='start-convo-text'>Tell us about your dream car!</p>
         </div>
     );
 };

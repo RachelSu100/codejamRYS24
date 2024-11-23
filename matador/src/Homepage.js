@@ -2,6 +2,8 @@ import React from 'react';
 import './Homepage.css';
 import cars from './resources/cars.mp4';
 import { useNavigate } from 'react-router-dom';
+import Navigation from './Navigation';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Homepage = () => {
     const navigate = useNavigate();
@@ -18,7 +20,11 @@ const Homepage = () => {
                 </video>
             </div>
 
-            <div className='text-container'>
+            <div className='container'>
+                <div>
+                    <Navigation/>
+                </div>
+                <div className='text-container'>
                 <p className="tagline-text">Find your dream car.</p>
                 <button 
                     className="get-started-button" 
@@ -26,7 +32,9 @@ const Homepage = () => {
                 >
                     Get started now
                 </button>
+                </div>
             </div>
+
         </main>
     );
 };
