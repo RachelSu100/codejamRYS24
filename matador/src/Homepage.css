@@ -1,0 +1,15 @@
+.get-started-button {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-radius: 2vh;
+    padding: 15px;
+    font-size: 5vh;
+    border-width: 5px;
+    box-shadow: none;
+}
+
+.tagline-text {
+    font-size: 10vh;
+    font-family: 'MyCustomFont', sans-serif;
+}
