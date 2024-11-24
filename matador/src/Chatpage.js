@@ -28,12 +28,14 @@ const Chatpage = () => {
     };
 
     const handleSendMessage = async () => {
+        
         if (inputValue.trim()) {
             const userMessage = { role: 'user', content: inputValue };
             setMessages([...messages, userMessage]);
             setInputValue('');
 
             try {
+               
                 // Send user query to the Python back-end API
                 const response = await axios.post('http://localhost:5000/chat', { query: inputValue });
                 
