@@ -20,16 +20,18 @@ const Homepage = () => {
                 </video>
             </div>
 
-            <div className='container'>
-                <Navigation/>
-                <div className='text-container'>
-                <p className="tagline-text">Find your dream car.</p>
-                <button 
-                    className="get-started-button" 
-                    onClick={handleClick}
-                >
-                    Get started now
-                </button>
+            <div className='navbar-chatpage'>
+            <Navigation/>
+                <div className='container'>
+                    <div className='text-container'>
+                    <p className="tagline-text">Find your dream car.</p>
+                    <button 
+                        className="get-started-button" 
+                        onClick={handleClick}
+                    >
+                        Get started now
+                    </button>
+                    </div>
                 </div>
             </div>
 
