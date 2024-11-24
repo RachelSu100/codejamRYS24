@@ -19,7 +19,7 @@
     object-fit: cover;
 }
 
-.container {
+.text-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -47,6 +47,7 @@
     border-width: 5px;
     box-shadow: none;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 
 .get-started-button:hover {
@@ -54,10 +55,45 @@
     transition: background-color 0.3s ease;
 }
 
-.text-container{
-    margin-top: 20vh;
+/* Styling for the burger menu */
+.burger-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
 }
 
-.navbar-chatpage{
-    padding: 1vh;
+.burger-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 64px;
+    cursor: pointer;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: rgba(144, 144, 144, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.menu-options button {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.699);
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background 0.3s;
+}
+
+.menu-options button:hover {
+    background-color: #ffffff33;
 }
