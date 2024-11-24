@@ -1,6 +1,4 @@
-# requirements
-# Make sure to install the necessary packages before running the script
-# pip install pandas flask requests ollama streamlit streamlit-chat langchain faiss-cpu transformers ctransformers langchain-community
+
 
 # imports
 import pandas as pd
@@ -133,7 +131,7 @@ if csv_data is not None:
 
     # Chat UI
     if 'user' not in st.session_state:
-        st.session_state['user'] = ["Hey there"]
+        st.session_state['user'] = ["Hi there! Please start describing which type of car you are looking for."]
 
     if 'assistant' not in st.session_state:
         st.session_state['assistant'] = ["Hello, I am Matador Chatbot! How can I help you find your car today?"]
