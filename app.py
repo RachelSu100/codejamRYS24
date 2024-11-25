@@ -3,12 +3,11 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 from transformers import GPT2LMHeadModel, GPT2Tokenizer, pipeline
 from qdrant_client import QdrantClient
-from flask_cors import CORS  # Import CORS
+from flask_cors import CORS  
 
 app = Flask(__name__)
 CORS(app)  
 
-# Load the necessary models
 sentence_model = SentenceTransformer('all-MiniLM-L6-v2')
 gpt2_tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 gpt2_model = GPT2LMHeadModel.from_pretrained("gpt2")
